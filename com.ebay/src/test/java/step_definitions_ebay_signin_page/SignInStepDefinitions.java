@@ -88,11 +88,11 @@ public class SignInStepDefinitions {
     @Then("user shall see {string} on homepage")
     public void user_shall_see_on_homepage(String string) {
         signInPage = new SignInPage();
-//        String actualText = signInPage.getTextFromElement(signInPage.actualTextOnHomepageAfterAccountCreation);
-//        String expectedText = "Hi "+string+"!";
+        String actualText = signInPage.getTextFromElement(signInPage.actualTextOnHomepageAfterAccountCreation);
+        String expectedText = "Hi "+string+"!";
 
-        String actualText = signInPage.getTextFromElement(signInPage.actualTextPasswordErrorUnsuccessfulAccountCreation);
-        String expectedText = "";
+//        String actualText = signInPage.getTextFromElement(signInPage.actualTextPasswordErrorUnsuccessfulAccountCreation);
+//        String expectedText = "";
 
         Assert.assertEquals(expectedText, actualText, "TEXT DO NOT MATCH");
     }
