@@ -18,8 +18,10 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.*;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
-import org.testng.annotations.Optional;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
@@ -550,7 +552,13 @@ public class BaseAPI {
     /**
      * Synchronization Helper Methods
      */
-
+    public void waitTimeUsingFluent() {
+        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                .withTimeout(Duration.ofSeconds(10))
+                .pollingEvery(Duration.ofSeconds(2))
+                .withMessage("Time out after 30 seconds")
+                .ignoring(NoSuchElementException.class);
+    }
     public void waitForVisibilityOfElement(WebElement element) {
         try {
             driverWait.until(ExpectedConditions.visibilityOf(element));
@@ -602,6 +610,25 @@ public class BaseAPI {
     /**
      * Assertion Helper Methods
      */
+    public boolean isElementEnabled(WebElement element) {
+        boolean flag = false;
+
+        try {
+            waitForVisibilityOfElement(element);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("UNABLE TO DETERMINE IF ELEMENT IS VISIBLE");
+        }
+
+        if (element.isEnabled()) {
+            flag = true;
+            return flag;
+        }
+
+        return flag;
+
+    }
+
 
     public boolean isElementDisplayed(WebElement element) {
         boolean flag = false;
