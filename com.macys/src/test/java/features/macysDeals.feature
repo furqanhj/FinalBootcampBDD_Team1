@@ -20,5 +20,3 @@ Feature: Macy's Deals features
       | Kids swimwear  | Kids swimwear  | Macy's Coupons, Deals and Promotions - SAVE NOW! |
 
 
-    Scenario:
-      When User clicks on
