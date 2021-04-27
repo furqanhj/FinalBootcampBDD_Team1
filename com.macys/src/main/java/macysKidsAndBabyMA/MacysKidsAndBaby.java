@@ -32,4 +32,23 @@ public class MacysKidsAndBaby extends BaseAPI {
 
 
     }
+
+    public void clickBoysSizes (){
+        clickByXpathOrCssUsingJavaScript(WEB_ELEMENT_BOYS_SIZES);
+
+    }
+
+    public void clickToddlerBoysSize (){
+        clickByXpathOrCssUsingJavaScript(WEB_ELEMENT_TODDLER_BOYS_SIZES);
+    }
+
+    public void clickToddlerTshirt () {
+        clickByXpathOrCssUsingJavaScript(WEB_ELEMENT_TODDLER_TSHIRT);
+    }
+
+    public void verifyPageHeader (String expectedHeader){
+        softAssert.assertEquals(expectedHeader,WEB_ELEMENT_TODDLER_TSHIRT_HEADER);
+
+
+    }
 }

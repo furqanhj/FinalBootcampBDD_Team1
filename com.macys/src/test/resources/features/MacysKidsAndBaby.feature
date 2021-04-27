@@ -22,6 +22,8 @@ Feature: Macys Kids And Baby features
 
 
 
-  Scenario: User should be able to click little girls size
-      When User enters Kids And Baby
-      Then User should land on the Kids And Baby page
+  Scenario: User should be able to search toddlers Tshirt
+      When User clicks Boys sizes
+      And  User clicks on Toddler Boys size
+      And  User clicks on polo shirt
+      Then User verify "Toddler Boys Paint Splatter Big Pony Cotton Jersey Tee" page header

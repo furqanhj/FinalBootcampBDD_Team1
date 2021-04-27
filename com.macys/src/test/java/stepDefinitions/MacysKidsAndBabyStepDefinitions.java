@@ -39,6 +39,27 @@ public class MacysKidsAndBabyStepDefinitions extends BaseAPI  {
     public void userEntersKidsAndBaby() {
 
     }
+
+    @When("User clicks Boys sizes")
+    public void userClicksBoysSizes() {
+        macys.clickBoysSizes();
+    }
+
+    @And("User clicks on Toddler Boys size")
+    public void userClicksOnToddlerBoysSize() {
+        macys.clickToddlerBoysSize();
+    }
+
+
+    @And("User clicks on polo shirt")
+    public void userClicksOnPoloShirt() {
+        macys.clickToddlerTshirt();
+    }
+
+    @Then("User verify {string} page header")
+    public void userVerifyPageHeader(String expecterHeader) {
+        macys.verifyPageHeader(expecterHeader);
+    }
 }
 
 
