@@ -20,15 +20,14 @@ public class GoogleStepDefinitions extends BaseAPI {
 
         actions = new Actions(driver);
     }
-
     @Given("user is on the google homepage")
     public void user_is_on_the_google_homepage() {
         // Write code here that turns the phrase above into concrete actions
         driver.get(url);
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-
     }
+
 
     @When("user enters a text as {string}")
     public void user_enters_a_text_as(String string) {
