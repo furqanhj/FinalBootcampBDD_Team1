@@ -1,4 +1,4 @@
-package step_definitions_airbnbBS;
+package stepDefinitionsAirbnb;
 
 import common.BaseAPI;
 
