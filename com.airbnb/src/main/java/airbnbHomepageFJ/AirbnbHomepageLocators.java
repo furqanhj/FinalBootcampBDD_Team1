@@ -1,6 +1,6 @@
 package airbnbHomepageFJ;
 
-public class AirbnbHomepageWebElements {
+public class AirbnbHomepageLocators {
 
     /**
      * Locators for elements on homepage

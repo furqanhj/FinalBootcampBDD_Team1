@@ -1,6 +1,6 @@
 package emailSignupPageFJ;
 
-public class EmailSignupPageWebElements {
+public class EmailSignupPageLocators {
 
     /**
      * Locators on Macys homepage

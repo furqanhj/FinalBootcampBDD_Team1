@@ -1,6 +1,6 @@
 package expediaSignInPageFJ;
 
-import static expediaSignInPageFJ.SignInPageWebElements.*;
+import static expediaSignInPageFJ.SignInPageLocators.*;
 import common.BaseAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

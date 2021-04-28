@@ -1,6 +1,6 @@
 package bofaInvestingPageFJ;
 
-public class InvestingPageWebElements {
+public class InvestingPageLocators {
 
     /**
      * Locators on Bank Of America homepage

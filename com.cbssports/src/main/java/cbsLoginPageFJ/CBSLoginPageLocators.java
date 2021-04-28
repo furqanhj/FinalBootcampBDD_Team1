@@ -1,6 +1,6 @@
 package cbsLoginPageFJ;
 
-public class CBSLoginPageWebElements {
+public class CBSLoginPageLocators {
 
     /**
      * Locators on CBS SPORTS Homepage

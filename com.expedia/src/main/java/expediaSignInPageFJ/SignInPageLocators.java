@@ -1,6 +1,6 @@
 package expediaSignInPageFJ;
 
-public class SignInPageWebElements {
+public class SignInPageLocators {
 
     /**
      * Locators on Expedia homepage

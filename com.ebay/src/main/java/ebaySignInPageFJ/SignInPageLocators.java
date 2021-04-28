@@ -1,6 +1,6 @@
 package ebaySignInPageFJ;
 
-public class SignInPageWebElements{
+public class SignInPageLocators {
 
 
     /**

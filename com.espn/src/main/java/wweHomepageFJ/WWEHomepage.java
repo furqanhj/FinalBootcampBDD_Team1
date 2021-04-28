@@ -1,6 +1,6 @@
 package wweHomepageFJ;
 
-import static wweHomepageFJ.WWEHomepageWebElements.*;
+import static wweHomepageFJ.WWEHomepageLocators.*;
 import common.BaseAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

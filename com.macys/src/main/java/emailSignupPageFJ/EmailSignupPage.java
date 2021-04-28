@@ -1,6 +1,6 @@
 package emailSignupPageFJ;
 
-import static emailSignupPageFJ.EmailSignupPageWebElements.*;
+import static emailSignupPageFJ.EmailSignupPageLocators.*;
 
 import common.BaseAPI;
 import org.openqa.selenium.WebElement;

@@ -1,6 +1,6 @@
 package wweHomepageFJ;
 
-public class WWEHomepageWebElements {
+public class WWEHomepageLocators {
 
     /**
      * Locators for ESPN Homepage

@@ -1,6 +1,6 @@
 package bofaInvestingPageFJ;
 
-import static bofaInvestingPageFJ.InvestingPageWebElements.*;
+import static bofaInvestingPageFJ.InvestingPageLocators.*;
 import common.BaseAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

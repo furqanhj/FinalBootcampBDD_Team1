@@ -1,6 +1,6 @@
 package attTVPageFJ;
 
-public class TVPageWebElements {
+public class TVPageLocators {
 
     /**
      * Locators on TV PAGE
